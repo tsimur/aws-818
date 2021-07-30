@@ -1,4 +1,5 @@
 #!/bin/bash
+apt-get update
 apt-get -y install nginx
-git clone git@github.com:tsimur-service/edu-aws.git
+sudo rm -r /var/www/html/*
 cp -r edu-aws/template/* /var/www/html/
